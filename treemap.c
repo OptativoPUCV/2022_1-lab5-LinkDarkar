@@ -51,9 +51,9 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
 {
     if(searchTreeMap(tree, key) != NULL)
     {
-        return NULL;
+        return;
     }
-    return NULL;
+    return;
 }
 
 TreeNode * minimum(TreeNode * x)
