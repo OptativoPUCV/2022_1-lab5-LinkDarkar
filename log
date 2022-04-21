@@ -123,3 +123,9 @@ treemap.c:29:12: note: declared here
             ^~~~~~~~~~~~~~
 Compilation failed
 d55923c
+ju., 21 de abr. de 2022 16:47:10: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|4
+total_score: 35/70
+321088c
