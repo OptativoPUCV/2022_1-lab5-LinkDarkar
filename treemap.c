@@ -208,5 +208,22 @@ Pair * firstTreeMap(TreeMap * tree)
 
 Pair * nextTreeMap(TreeMap * tree)
 {
-    return tree->current->right->pair;
+    if (tree->current->right != NULL)
+    {
+        return minimum(tree->current->right)->pair;
+    }
+    
+    TreeNode* aux = tree->current->parent;
+    while (aux->parent != NULL)
+    {
+        if (tree->lower_than(tree->current->pair->key , aux->pair->key) == 1)
+        {
+            tree->current = aux->parent;
+            return tree->current->pair;
+        }
+        else
+        {
+            aux = aux->parent;
+        }
+    }
 }
