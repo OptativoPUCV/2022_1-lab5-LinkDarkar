@@ -110,3 +110,16 @@ ju., 21 de abr. de 2022 16:44:45:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 20b4470
+ju., 21 de abr. de 2022 16:46:34: 
+ treemap.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function 'removeNode':
+treemap.c:158:25: error: too few arguments to function 'createTreeNode'
+         TreeNode* aux = createTreeNode(minimum(node->right));
+                         ^~~~~~~~~~~~~~
+treemap.c:29:12: note: declared here
+ TreeNode * createTreeNode(void* key, void * value)
+            ^~~~~~~~~~~~~~
+Compilation failed
+d55923c

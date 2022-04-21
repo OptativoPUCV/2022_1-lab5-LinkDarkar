@@ -155,8 +155,9 @@ void removeNode(TreeMap * tree, TreeNode* node)
     /*opcion nodo con dos hijos*/
     if(node->left != NULL && node->right != NULL)
     {
-        node = minimum(node->right);
-        removeNode(tree , minimum(node->right));
+        TreeNode* aux = createTreeNode(minimum(node->right));
+        node = aux;
+        removeNode(tree , aux);
         return;
     }
 }
