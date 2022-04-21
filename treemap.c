@@ -207,7 +207,6 @@ Pair * upperBound(TreeMap * tree, void* key)
                 break;
             }
             tree->current = tree->current->right;
-            continue;
         }
         
         if (tree->lower_than(tree->current->pair->key , key) == 0)
@@ -218,7 +217,6 @@ Pair * upperBound(TreeMap * tree, void* key)
             }
             tree->current = tree->current->left;
             ub_node = tree->current;
-            continue;
         }
     }
 
