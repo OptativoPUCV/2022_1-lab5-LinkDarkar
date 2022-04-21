@@ -171,9 +171,6 @@ void eraseTreeMap(TreeMap * tree, void* key)
     removeNode(tree, node);
 }
 
-
-
-
 Pair * searchTreeMap(TreeMap * tree, void* key)
 {
     //TreeNode* nodo = createTreeNode(tree->root->pair->key , tree->root->pair->value);
@@ -206,7 +203,7 @@ Pair * upperBound(TreeMap * tree, void* key)
 
 Pair * firstTreeMap(TreeMap * tree)
 {
-    return NULL;
+    return minimum(tree->root)->pair;
 }
 
 Pair * nextTreeMap(TreeMap * tree)
