@@ -53,6 +53,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
     {
         return NULL;
     }
+    return NULL;
 }
 
 TreeNode * minimum(TreeNode * x)
