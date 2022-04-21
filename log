@@ -88,3 +88,9 @@ treemap.c:119:32: error: statement with no effect [-Werror=unused-value]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 857cf1a
+ju., 21 de abr. de 2022 16:37:06: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  16|4
+total_score: 30/70
+66a4cf0
