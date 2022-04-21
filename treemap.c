@@ -62,11 +62,6 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
     {
         if (tree->lower_than(key , tree->current->pair->key) == 1)
         {
-            /*
-            new->parent = tree->current;
-            tree->current->left = new;
-            continue;
-            */
            if (tree->current->left == NULL)
            {
                menor = 1;
@@ -77,11 +72,6 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
         }
         else
         {
-            /*
-            new->parent = tree->current;
-            tree->current->right = new;
-            continue;
-            */
            if (tree->current->right == NULL)
            {
                menor = 0;
