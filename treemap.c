@@ -224,6 +224,10 @@ Pair * nextTreeMap(TreeMap * tree)
         else
         {
             aux = aux->parent;
+            if (aux == tree->root)
+            {
+                return NULL;
+            }
         }
     }
     return tree->current->pair;
