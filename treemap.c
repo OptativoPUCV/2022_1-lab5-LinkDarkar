@@ -219,11 +219,12 @@ Pair * nextTreeMap(TreeMap * tree)
         if (tree->lower_than(tree->current->pair->key , aux->pair->key) == 1)
         {
             tree->current = aux->parent;
-            return tree->current->pair;
+            break;
         }
         else
         {
             aux = aux->parent;
         }
     }
+    return tree->current->pair;
 }
