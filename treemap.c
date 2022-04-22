@@ -202,11 +202,10 @@ Pair * upperBound(TreeMap * tree, void* key)
     {
         if (tree->lower_than(tree->current->pair->key , key) == 1)
         {
-            /*
             if (tree->current->right == NULL)
             {
                 break;
-            }*/
+            }
             tree->current = tree->current->right;
         }
         
