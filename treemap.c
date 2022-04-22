@@ -228,11 +228,12 @@ Pair * upperBound(TreeMap * tree, void* key)
             continue;
         }
     }
-
+    /*
     if (tree->current->pair->key != key)
     {
         return ub_node->pair;
     }
+    */
     
     return tree->current->pair;
 }
