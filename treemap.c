@@ -224,12 +224,12 @@ Pair * upperBound(TreeMap * tree, void* key)
                 ub_node = tree->current;
             }*/
             tree->current = tree->current->left;
-            //ub_node = tree->current->parent;
+            ub_node = tree->current->parent;
             continue;
         }
     }
 
-    if (strcmp(tree->current->pair->key , key) < 0)
+    if (tree->lower_than(tree->current->pair->key , key) == 1)
     {
         return ub_node->pair;
     }
