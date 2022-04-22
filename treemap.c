@@ -197,7 +197,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
 Pair * upperBound(TreeMap * tree, void* key)
 {
     tree->current = tree->root;
-    TreeNode* nodo = tree->root;
+    //TreeNode* nodo = tree->root;
     TreeNode* ub_node = tree->current;
     while (tree->current->pair->key != key)
     {
