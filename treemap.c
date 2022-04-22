@@ -199,8 +199,9 @@ Pair * upperBound(TreeMap * tree, void* key)
     tree->current = tree->root;
     TreeNode* nodo = tree->root;
     TreeNode* ub_node = tree->current;
-    while (nodo->pair->key != key)
+    while (tree->current->pair->key != key)
     {
+        //si la key del current es menor a la que estoy buscando
         if (tree->lower_than(tree->current->pair->key , key) == 1)
         {
             if (tree->current->right == NULL)
@@ -208,8 +209,9 @@ Pair * upperBound(TreeMap * tree, void* key)
                 break;
             }
             tree->current = tree->current->right;
+            continue;
         }
-        
+        //si la key del current es mayor a la que estoy buscando
         if (tree->lower_than(tree->current->pair->key , key) == 0)
         {
             if (tree->current->left == NULL)
@@ -223,6 +225,7 @@ Pair * upperBound(TreeMap * tree, void* key)
             }*/
             tree->current = tree->current->left;
             ub_node = tree->current;
+            continue;
         }
     }
 

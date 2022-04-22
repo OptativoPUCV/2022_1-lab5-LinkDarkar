@@ -314,3 +314,14 @@ ju., 21 de abr. de 2022 20:10:01:
  tests:  27|1
 total_score: 60/70
 11d0e51
+ju., 21 de abr. de 2022 20:12:28: 
+ treemap.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function 'upperBound':
+treemap.c:200:15: error: unused variable 'nodo' [-Werror=unused-variable]
+     TreeNode* nodo = tree->root;
+               ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+7b96701
