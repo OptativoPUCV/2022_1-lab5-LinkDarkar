@@ -198,7 +198,7 @@ Pair * upperBound(TreeMap * tree, void* key)
 {
     tree->current = tree->root;
     //TreeNode* nodo = tree->root;
-    TreeNode* ub_node = tree->current;
+    TreeNode* ub_node = NULL;
     while (strcmp(tree->current->pair->key , key) != 0)
     {
         //si la key del current es menor a la que estoy buscando
