@@ -211,12 +211,11 @@ Pair * upperBound(TreeMap * tree, void* key)
         
         if (tree->lower_than(tree->current->pair->key , key) == 0)
         {
-            /*
             if (tree->current->left == NULL)
             {
                 break;
             }
-            
+            /*
             if (tree->lower_than(tree->current->pair->key , key) == 0 && tree->lower_than(tree->current->pair->key , ub_node->pair->key) == 1)
             {
                 ub_node = tree->current;
