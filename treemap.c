@@ -224,7 +224,7 @@ Pair * upperBound(TreeMap * tree, void* key)
                 ub_node = tree->current;
             }*/
             tree->current = tree->current->left;
-            ub_node = tree->current;
+            ub_node = tree->current->parent;
             continue;
         }
     }
