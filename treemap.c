@@ -229,9 +229,14 @@ Pair * upperBound(TreeMap * tree, void* key)
         }
     }
 
-    if (tree->lower_than(tree->current->pair->key , key) == 1)
+    if (tree->lower_than(tree->current->pair->key , key) == 1 && ub_node != NULL)
     {
         return ub_node->pair;
+    }
+
+    if (ub_node == NULL)
+    {
+        return NULL;
     }
     
     return tree->current->pair;
