@@ -229,7 +229,7 @@ Pair * upperBound(TreeMap * tree, void* key)
         }
     }
 
-    if (strcmp(tree->current->pair->key , key) > 0)
+    if (strcmp(tree->current->pair->key , key) < 0)
     {
         return ub_node->pair;
     }
